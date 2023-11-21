@@ -36,7 +36,7 @@ export class LoginFormComponent implements OnInit{
         this.loginService.toggleMenu(true);
         this.loginService.rememberMe().subscribe();
       },
-      error: (err: HttpErrorResponse) => { this.cookieService.delete("rememberMe");}
+      error: (err: HttpErrorResponse) => {window.alert("here"); this.cookieService.delete("rememberMe");}
     }
       );
     }
