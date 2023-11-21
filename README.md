@@ -1,6 +1,7 @@
 # AngularSpringBootJwtClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+This project is meant as example frontend app for [springBoot-jwt-jpa-redis-example](https://github.com/steeveone/springBoot-jwt-jpa-redis-example)
 
 ## Development server
 
