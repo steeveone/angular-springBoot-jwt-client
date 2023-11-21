@@ -1,0 +1,10 @@
+<div class="card my-5">
+    <div class="card-body">
+        Reset password for {{user?.name}}
+        <form (ngSubmit)="onSubmit()" #newPwdForm="ngForm">
+        <label for="newPwd">Password: </label>
+        <input id="newPwd" type="password" [formControl]="newPwd" />
+        <button type="submit"  class="btn btn-info" i18n>Reset</button>
+        </form>
+    </div>
+</div>

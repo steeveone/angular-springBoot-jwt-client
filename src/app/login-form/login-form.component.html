@@ -1,0 +1,15 @@
+<div class="form-group"  [hidden]="hidden">
+    <input type="text" class="form-control" id="email"
+       required
+       [(ngModel)]="model.email" name="email"/>
+
+    <input type="password" class="form-control" id="password"
+       required
+       [(ngModel)]="model.password" name="password"/>
+    <input type="checkbox" [(ngModel)]="rememberMe" id="rememberMe"/>
+    <label for="rememberMe" class="text-white py-3" i18n>Remember Me</label>
+    <button type="button" class="btn btn-default" (click)="login()" i18n>login</button><br/>
+</div>
+<div class="form-group"  [hidden]="!hidden">
+   <button type="button" class="btn btn-default" (click)="logout()" i18n>logout</button><br/>
+</div>
